@@ -1,7 +1,7 @@
 ✅ Stored Procedure in PostgreSQL — Brief Explanation
 What is a Stored Procedure?
 A stored procedure is a saved block of SQL code that you can execute again and again.
-It is used to perform actions such as INSERT, UPDATE, DELETE, or complex business logic.
+-> It is used to perform actions such as INSERT, UPDATE, DELETE, or complex business logic.
 
 ✅ Key Points
 1. Introduced in PostgreSQL 11
@@ -9,8 +9,8 @@ Stored procedures were added from PostgreSQL 11 (earlier only functions existed)
 
 2. Can Commit & Rollback
 Unlike functions, procedures can use:
-COMMIT
-ROLLBACK
+-> COMMIT
+-> ROLLBACK
 This is useful for handling transactions inside the procedure.
 
 3. Called using CALL

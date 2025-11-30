@@ -108,3 +108,4 @@ CREATE TABLE results (
     marks INT,
     PRIMARY KEY (student_id, exam_id)
 );
+
