@@ -2,21 +2,21 @@
 | Feature            | UNION                                 | UNION ALL                     |
 | ------------------ | ------------------------------------- | ---------------------------   |
 | Removes duplicates | ✔ Yes                                 | ❌ No                        |
-| Returns all rows   | ❌ No (unique only)                    | ✔ Yes (includes duplicates) |
-| Faster?            | ❌ Slightly slower                     | ✔ Faster                    |
-| Sorting            | Internally sorts to remove duplicates | No sorting                    |
+| Returns all rows   | ❌ No (unique only)                   | ✔ Yes (includes duplicates)  |
+| Faster?            | ❌ Slightly slower                    | ✔ Faster                     |
+| Sorting            | Internally sorts to remove duplicates  | No sorting                   |
 
 🎯 Basic Example
 Table: employees_2024
 emp_id	name
-1	Arun
-2	Meena
-3	Ravi
+    1	Arun
+    2	Meena
+    3	Ravi
 Table: employees_2025
 emp_id	name
-3	Ravi
-4	Kiran
-5	Divya
+    3	Ravi
+    4	Kiran
+    5	Divya
 🧩 UNION Example (Removes duplicates)
 SELECT name FROM employees_2024
 UNION

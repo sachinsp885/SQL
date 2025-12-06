@@ -14,16 +14,16 @@ If a value exists in Table A and also exists in Table B, only then it appears in
 📌 Example
 Table 1: employees
 emp_id	name	dept_id
-1	Arun	10
-2	Meena	20
-3	Ravi	10
-4	Kiran	40
+  1   	Arun	  10
+  2	    Meena	  20
+  3	    Ravi	  10
+  4	    Kiran	  40
 
 Table 2: departments
 dept_id	dept_name
-10	IT
-20	HR
-30	Finance
+  10	    IT
+  20	    HR
+  30	  Finance
 
 🧩 INNER JOIN Query
 SELECT e.name, d.dept_name
@@ -33,9 +33,9 @@ ON e.dept_id = d.dept_id;
 
 ✅ Output (Matching Rows Only)
 name	dept_name
-Arun	IT
-Meena	HR
-Ravi	IT
+Arun	  IT
+Meena	  HR
+Ravi	  IT
 
 ✔️ Explanation of the Result
 Returned

@@ -18,16 +18,16 @@ It is opposite of LEFT JOIN.
 📌 Example Tables
 Table 1: employees (LEFT table)
 emp_id	name	dept_id
-1	Arun	10
-2	Meena	20
-3	Ravi	10
-4	Kiran	40
+   1	     Arun	  10
+   2	     Meena  20
+   3	     Ravi	  10
+   4	     Kiran  40
 
 Table 2: departments (RIGHT table)
 dept_id	dept_name
-10	IT
-20	HR
-30	Finance
+  10	        IT
+  20	        HR
+  30	      Finance
 
 🧩 RIGHT JOIN Query
 SELECT e.name, e.dept_id, d.dept_name
@@ -37,10 +37,10 @@ ON e.dept_id = d.dept_id;
 
 ✅ Output (All rows from RIGHT + matching LEFT)
 name	dept_id	dept_name
-Arun	10	IT
-Ravi	10	IT
-Meena	20	HR
-NULL	NULL	Finance
+Arun	  10	        IT
+Ravi	  10	        IT
+Meena  20	        HR
+NULL	 NULL	Finance
 
 ✔️ Explanation
 1️⃣ Matching Rows

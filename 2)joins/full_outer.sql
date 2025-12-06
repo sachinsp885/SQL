@@ -22,16 +22,16 @@ RIGHT JOIN
 📌 Example Tables
 employees (LEFT table)
 emp_id	name	dept_id
-1	Arun	10
-2	Meena	20
-3	Ravi	10
-4	Kiran	40
+  1	    Arun	  10
+  2	    Meena	  20
+  3	    Ravi	  10
+  4	    Kiran	  40
 
 departments (RIGHT table)
 dept_id	dept_name
-10	IT
-20	HR
-30	Finance
+  10	      IT
+  20	      HR
+  30	      Finance
 
 🧩 FULL OUTER JOIN Query
 SELECT e.name, e.dept_id, d.dept_name

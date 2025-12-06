@@ -17,16 +17,16 @@ If no match, RIGHT table values become NULL
 📌 Example
 Table 1: employees (LEFT table)
 emp_id	name	dept_id
-1	Arun	10
-2	Meena	20
-3	Ravi	10
-4	Kiran	40
+  1	    Arun	  10
+  2	    Meena	  20
+  3	    Ravi	  10
+  4	    Kiran	  40
 
 Table 2: departments (RIGHT table)
 dept_id	dept_name
-10	IT
-20	HR
-30	Finance
+  10	    IT
+  20	    HR
+  30	    Finance
 
 🧩 LEFT JOIN Query
 SELECT e.name, e.dept_id, d.dept_name
@@ -36,10 +36,10 @@ ON e.dept_id = d.dept_id;
 
 ✅ Output (All rows from LEFT + matching RIGHT)
 name	dept_id	dept_name
-Arun	10	IT
-Meena	20	HR
-Ravi	10	IT
-Kiran	40	NULL
+Arun	  10	    IT
+Meena	  20	    HR
+Ravi	  10	    IT
+Kiran	  40	    NULL
 
 ✔️ Explanation
 1️⃣ Matching rows

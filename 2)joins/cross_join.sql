@@ -33,9 +33,9 @@ emp_id	name
 3	Ravi
 departments
 dept_id	dept_name
-10	IT
-20	HR
-30	Finance
+  10	    IT
+  20	    HR
+  30	  Finance
 🧩 CROSS JOIN Query
 SELECT e.name, d.dept_name
 FROM employees e
