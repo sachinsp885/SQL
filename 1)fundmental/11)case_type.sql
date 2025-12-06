@@ -25,11 +25,11 @@ Searched CASE: Uses conditions (>, <, LIKE, etc.)
 
 Suppose we have an employees table:
 emp_id	name	salary	department	performance_rating
-1	Ravi	60000	IT	A
-2	Meena	45000	HR	B
-3	Arun	52000	IT	C
-4	Divya	40000	Finance	B
-5	Rohit	30000	HR	D
+    1	Ravi	60000	    IT	        A
+    2	Meena	45000	    HR	        B
+    3	Arun	52000	    IT	        C
+    4	Divya	40000	    Finance	    B
+    5	Rohit	30000	    HR	        D
 
 1️⃣ Assign Grade Based on Salary (Searched CASE)
 SELECT 

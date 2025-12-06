@@ -1,4 +1,5 @@
 ⭐ 1️⃣ WHERE Clause
+
 WHERE is used to filter rows before any grouping in a query.
 It works on individual rows.
 
@@ -7,11 +8,12 @@ SELECT column1, column2
 FROM table_name
 WHERE condition;
 
---✔  Example:
+--✔  Examples:
 1. Filter by department
 SELECT * 
 FROM employees
 WHERE department = 'IT';
+
 
 --✔  Explanation::
 Returns only employees whose department is IT.
@@ -20,6 +22,7 @@ Returns only employees whose department is IT.
 SELECT name, salary 
 FROM employees
 WHERE salary > 40000;
+
 
 --✔  Explanation::
 Returns employees with salary more than 40000.
@@ -34,7 +37,7 @@ WHERE salary > 30000 AND department = 'HR';
 Returns employees in HR with salary > 30000.
 Use AND, OR, NOT for combining conditions.
 
-⭐2️⃣ HAVING Clause
+⭐ 2️⃣ HAVING Clause
 HAVING is used to filter groups after aggregation.
 It works only with grouped results (GROUP BY).
 
@@ -44,18 +47,18 @@ FROM table_name
 GROUP BY column1
 HAVING aggregate_condition;
 
---✔  Example:
-1. Count employees in each department, only if more than 1
+--✔  Examples:
+--1. Count employees in each department, only if more than 1
 SELECT department, COUNT(*) AS emp_count
 FROM employees
 GROUP BY department
 HAVING COUNT(*) > 1;
 
+
 --✔  Explanation::
 GROUP BY groups rows by department
 HAVING filters aggregated results → only departments with >1 employee
-
-2. Average salary per department, only if avg > 40000
+--2. Average salary per department, only if avg > 40000
 SELECT department, AVG(salary) AS avg_salary
 FROM employees
 GROUP BY department
@@ -76,15 +79,13 @@ Example	WHERE salary > 30000	HAVING AVG(salary) > 40000
 ⭐ Real Example with Table
 Table: employees
 emp_id	name	salary	department
-    1	Arun	 40000	    IT
-    2	Meena	 25000	    HR
-    3	Kiran	 30000	    IT
-    4	Anita	 60000	    HR
-    5	Ravi	 55000	 Finance
-
+    1	Arun	40000	IT
+    2	Meena	25000	HR
+    3	Kiran	30000	IT
+    4	Anita	60000	HR
+    5	Ravi	55000	Finance
 WHERE Example
 SELECT * FROM employees WHERE salary > 30000;
-
 Output: Arun, Anita, Ravi
 
 GROUP BY + HAVING Example
@@ -93,7 +94,8 @@ FROM employees
 GROUP BY department
 HAVING COUNT(*) > 1;
 
+
 Output:
 department	emp_count
-IT	2
-HR	2
+    IT	        2
+    HR	        2

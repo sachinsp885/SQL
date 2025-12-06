@@ -4,8 +4,6 @@
 -> AVG()
 -> MAX()
 -> MIN()
--> STRING_AGG() (PostgreSQL special)
--> ARRAY_AGG() (PostgreSQL special)
 
 1️⃣ COUNT() – Count number of rows
 --✔  Explanation: Count total employees
