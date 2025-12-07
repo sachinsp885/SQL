@@ -19,7 +19,7 @@ You run a stored procedure using:
 CALL procedure_name(arguments);
 
 ✅ Basic Syntax
-CREATE PROCEDURE procedure_name(parameter_name datatype)
+CREATE OR REPLACE PROCEDURE procedure_name(parameter_name datatype)
 LANGUAGE plpgsql
 AS $$
 BEGIN
@@ -51,7 +51,6 @@ Multiple SQL statements in one execution
 
 Transaction control (COMMIT, ROLLBACK)
 Batch operations
-
 
 Here is one real-world stored procedure example in PostgreSQL — very useful in companies.
 ✅ Real-World Example: Monthly Salary Update Procedure
