@@ -5,7 +5,7 @@
 | LOWER()            | Converts string to lowercase              | `SELECT LOWER('POSTGRES');`                  | `postgres`                    |                  |   |           |               |
 | INITCAP()          | Capitalizes first letter of each word     | `SELECT INITCAP('hello world');`             | `Hello World`                 |                  |   |           |               |
 | CONCAT()           | Joins multiple strings                    | `SELECT CONCAT('Data','Base');`              | `DataBase`                    |                  |   |           |               |
-| String concatenation operator  `SELECT 'Hello  'World';` | `Hello World` |
+| String concatenation operator  `SELECT 'Hello  'World';`       | `Hello World` |
 | SUBSTRING()        | Extracts part of a string                 | `SELECT SUBSTRING('Database' FROM 1 FOR 4);` | `Data`                        |                  |   |           |               |
 | LEFT()             | Returns leftmost characters               | `SELECT LEFT('PostgreSQL', 4);`              | `Post`                        |                  |   |           |               |
 | RIGHT()            | Returns rightmost characters              | `SELECT RIGHT('PostgreSQL', 3);`             | `SQL`                         |                  |   |           |               |
