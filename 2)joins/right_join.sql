@@ -1,7 +1,7 @@
 ✅ RIGHT JOIN — Explanation
 Definition
 RIGHT JOIN returns:
-All rows from the RIGHT table
+All rows from the RIGHT table only
 Matching rows from the LEFT table
 If no match, LEFT table values become NULL
 It is opposite of LEFT JOIN.
@@ -39,7 +39,7 @@ ON e.dept_id = d.dept_id;
 name	dept_id	dept_name
 Arun	  10	        IT
 Ravi	  10	        IT
-Meena  20	        HR
+Meena   20	        HR
 NULL	 NULL	Finance
 
 ✔️ Explanation
